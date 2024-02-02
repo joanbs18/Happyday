@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+
+        <div class="container">
+            <div class="content">
+                <i style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png&quot;); background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"
+                    role="img" class="" aria-label="Instagram" data-visualcompletion="css-img"></i>
+                <form class="content__form">
+                    <div class="content__inputs">
+                        <label>
+                            <input required="" type="password" id="password">
+                            <span>La password esta en ig notas</span>
+                        </label>
+                    </div>
+                    <button type="button" onclick="login()">Log In</button>
+                </form>
+
+                <div class="content__forgot-buttons">
+                    <button>
+                        <span>LA CONTRASEÑA ESTA IG NOTAS</span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var contraseña = '123123'
+
+        function login() {
+            var password = document.getElementById('password').value;
+            if (contraseña === password) {
+                window.location.href = 'day.html';
+            } else {
+                alert('REVISA BIEN EL IG')
+            }
+        }
+    </script>
+</body>
+
+</html>
